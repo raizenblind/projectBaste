@@ -14,7 +14,7 @@
             <StackLayout ~drawerContent backgroundColor="#ffffff">
                     <GridLayout class="drawer-header"  orientation='vertical'>
                         <StackLayout class="drawer-header"  orientation='vertical'>
-                            <Image :src="`${url}${user.profile_pic}`" class="profile-pic"/>
+                            <Image :src="user.profile_pic.includes('base64') ? user.profile_pic :`${url}${user.profile_pic}`" class="profile-pic"/>
                             <Label :text="'Admin: ' + user.firstname + ' ' + user.lastname" class="drawer-name"/>
                         </StackLayout>
                         <!-- <Label :text="'Wallet balance: ₱ ' + user.wallet" class="drawer-wallet"/> -->

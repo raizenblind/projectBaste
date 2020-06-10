@@ -10,8 +10,8 @@ const appSettings = require("tns-core-modules/application-settings");
 if(TNS_ENV !== 'production') {
   Vue.use(VueDevtools)
 }
-appSettings.setString("url", "http://192.168.1.4:3030/api/")
-
+// appSettings.setString("url", "http://192.168.1.4:3030/api/")
+appSettings.setString("url", "http://88093ac3c99d.ngrok.io/api/")
 // Prints Vue logs when --env.production is *NOT* set while building
 Vue.config.silent = true
 // Prints Colored logs when --env.production is *NOT* set while building
